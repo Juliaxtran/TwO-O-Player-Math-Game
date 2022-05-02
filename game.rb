@@ -23,17 +23,17 @@ class Game
       puts "---Game Over ---- "
       puts "Good bye! "
   end
+end
+
 
   def switch_player
-    if @current_player === @players[0]
+    if @current_player == @players[0]
       @current_player = @players[1]
     else
       @current_player = @players[0]
     end
   end
 
-
-  end
 end
 
 
