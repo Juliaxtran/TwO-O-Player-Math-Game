@@ -5,14 +5,15 @@ class Game
 
   attr_reader :report_life, :players, :current_player
 
-  def initalize(p1, p2)
+  def initialize(p1, p2)
     @players = [p1, p2]
     @playersIndex = 0
     @current_player = @players[@playersIndex]
   end
 
   def report_life
-    puts "p1:#{@player[0].life}/3 p2: #{player[1].life}/3"
+    puts "--- Score -----"
+    puts "Player1:#{@players[0].life}/3 Player 2:#{@players[1].life}/3"
   end
 
   def lose_life
@@ -20,6 +21,7 @@ class Game
     if @current_player.life == 0
       puts "#{current_player.name}, you lose!"
       puts "---Game Over ---- "
+      puts "Good bye! "
   end
 
   def switch_player
