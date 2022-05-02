@@ -13,7 +13,7 @@ class Game
 
   def report_life
     puts "--- Score -----"
-    puts "Player1:#{@players[0].life}/3 Player 2:#{@players[1].life}/3"
+    puts "Player1: #{@players[0].life}/3 Player2: #{@players[1].life}/3"
   end
 
   def lose_life
